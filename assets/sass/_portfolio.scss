@@ -1,0 +1,268 @@
+#portfolioSection{
+    padding: 9rem 0;
+    background: rgba(230, 230, 230, 0.171);
+    .container{
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0 7rem 0;
+            .bgBox{
+                height: 200px;
+                width: 200px;
+                background: #ffd5d5;
+                opacity: .6;
+                position: absolute;
+            }
+            h1{
+                position: relative;
+                font-size: 3.25rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                z-index: 1;
+            }
+        }
+        .pictureGrid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            justify-content: center;
+            grid-gap: 10px;
+            .box{
+                background: red;
+                text-decoration: none;
+                transition: box-shadow .35s linear .05s,
+                            transform .35s linear .05s;
+                            overflow: hidden;
+                &:hover{
+                    -webkit-box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    -moz-box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    cursor: pointer;
+                    transform: scale(1.03);
+                    transform: translate3d(0, 0, 0);
+                    .image{
+                        .title{
+                            transform: translate3d(0, 0, 0);
+                        }
+                    }
+                }
+                .image{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    .title{
+                        background: rgba(0,0,0,.8);
+                        border-radius: 20px;
+                        padding: 10px;
+                        text-transform: uppercase;
+                        color: white;
+                        transform: translate3d(0, 400px, 0);
+                        transition: transform .3s linear .05s;
+                    }
+                    .hoverBg{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: transparent;
+                        height: 100%;
+                        width: 100%;
+                        transition: background .375s linear .1s;
+                        &:hover{
+                            background: rgba(255, 0, 0, 0.658);
+                        }
+                    }
+                }
+            }
+            
+            .boxOne{
+                grid-column: 1 / 3;
+                grid-row: 1 / 2;
+                .image{
+                    background: url("https://cdn.dribbble.com/users/834691/screenshots/6984096/13_08_2019_card_hero_shot_2x.jpg") 
+                                no-repeat 
+                                center 
+                                center;
+                    background-size: cover;
+                }
+            }
+            .boxTwo{
+                grid-column: 3 / 4;
+                grid-row: 1 / 3;
+                .image{
+                    background: black
+                                url("https://cdn.dribbble.com/users/2577653/screenshots/6988256/shot__3__2x.png") 
+                                no-repeat 
+                                center 
+                                center;
+                    background-size: cover;
+                }
+            }
+            .boxThree{
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                .image{
+                    background: black
+                                url("https://cdn.dribbble.com/users/418188/screenshots/6565860/environment_protection_community_website_tubik.png") 
+                                no-repeat 
+                                center 
+                                center;
+                    background-size: cover;
+                }
+            }
+            .boxFour{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+                .image{
+                    background: black
+                                url("https://cdn.dribbble.com/users/757683/screenshots/6555182/ass_1_dribb_2x_2x.jpg") 
+                                no-repeat 
+                                center 
+                                center;
+                    background-size: cover;
+                }
+            }
+            .boxFive{
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+                .image{
+                    background: black
+                                url("https://cdn.dribbble.com/users/2091580/screenshots/6914974/__8.gif") 
+                                no-repeat 
+                                center 
+                                center;
+                    background-size: cover;
+                }
+            }
+            .boxSix{
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+                .image{
+                    background: black
+                                url("https://cdn.dribbble.com/users/1253590/screenshots/6744282/lampshades_2x.jpg") 
+                                no-repeat 
+                                center 
+                                center;
+                    background-size: cover;
+                }
+            }
+            .boxSeven{
+                grid-column: 3 / 4;
+                grid-row: 3 / 4;
+                .image{
+                    background: black
+                                url("https://cdn.dribbble.com/users/1051782/screenshots/6924929/fan-analysis01_2x.jpg") 
+                                no-repeat 
+                                center 
+                                center;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+// TABLETS
+@media only screen and (max-width: 960px){
+    #portfolioSection{
+        padding: 7rem 0 5rem 0;
+        .container{
+            .header{
+                .bgBox{
+                    height: 150px;
+                    width: 150px;
+                }
+                h1{
+                    font-size: 3rem;
+                }
+            }
+            .pictureGrid{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(4, 150px);
+                grid-gap: 20px;
+                .boxOne{
+                    grid-column: 1 / 3;
+                    grid-row: 1 / 2;
+                }
+                .boxTwo{
+                    grid-column: 3 / 5;
+                    grid-row: 1 / 2;
+                }
+                .boxThree{
+                    grid-column: 1 / 3;
+                    grid-row: 2 / 3;
+                }
+                .boxFour{
+                    grid-column: 3 / 5;
+                    grid-row: 2 / 3;
+                }
+                .boxFive{
+                    grid-column: 1 / 3;
+                    grid-row:3 / 4;
+                }
+                .boxSix{
+                    grid-column: 3 / 5;
+                    grid-row: 3 / 4;
+                }
+                .boxSeven{
+                    grid-column: 1 / 5;
+                    grid-row: 4 / 5;
+                }
+            }
+        }
+    }
+}
+
+// PHONES
+@media only screen and (max-width: 767px){
+    #portfolioSection{
+        padding: 5rem 0 3rem 0;
+        .container{
+            .header{
+                .bgBox{
+                    height: 150px;
+                    width: 150px;
+                }
+                h1{
+                    font-size: 3rem;
+                }
+            }
+            .pictureGrid{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(7, 150px);
+                .boxOne{
+                    grid-column: 1 / 5;
+                    grid-row: 1 / 2;
+                }
+                .boxTwo{
+                    grid-column: 1 / 5;
+                    grid-row: 2 / 3;
+                }
+                .boxThree{
+                    grid-column: 1 / 5;
+                    grid-row: 3 / 4;
+                }
+                .boxFour{
+                    grid-column: 1 / 5;
+                    grid-row: 4 / 5;
+                }
+                .boxFive{
+                    grid-column: 1 / 5;
+                    grid-row: 5 / 6;
+                }
+                .boxSix{
+                    grid-column: 1 / 5;
+                    grid-row: 6 / 7;
+                }
+                .boxSeven{
+                    grid-column: 1 / 5;
+                    grid-row: 7 / 8;
+                }
+            }
+        }
+    }
+}

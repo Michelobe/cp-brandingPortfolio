@@ -1,0 +1,158 @@
+#experience{
+    padding: 9rem 0;
+    .largeTitle{
+        text-align: center;
+        font-size: 5.5rem;
+        text-transform: uppercase;
+        color: rgba(0, 217, 255, 0.3);
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+    .experienceContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .largeIcons{
+            .square{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 210px;
+                height: 210px;
+                background: rgb(0, 162, 255);
+                font-size: 1rem;
+                color: white;
+                text-transform: uppercase;
+                position: relative;
+                top: -6rem;
+                left: 2rem;
+                .blueBox{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 170px;
+                    height: 170px;
+                    border: 3px solid white;
+                    letter-spacing: 3px;
+                }
+            }
+            .circle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 210px;
+                height: 210px;
+                background: white;
+                border: 25px solid rgb(216, 202, 6);
+                border-radius: 50%;
+                font-size: 1rem;
+                color: rgb(216, 202, 6);
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                position: relative;
+                top: -8rem;
+                left: 17rem;
+            }
+            .triangle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 0;
+                height: 0;
+                border-left: 105px solid transparent;
+                border-right: 105px solid transparent;
+                border-bottom: 185px solid red;
+                position: relative;
+                top: -8rem;
+                left: 6rem;
+                .innerTriangle{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 0;
+                    height: 0;
+                    border-left: 73px solid transparent;
+                    border-right: 73px solid transparent;
+                    border-bottom: 129px solid white;
+                    position: absolute;
+                    top: 38px;
+                    font-size: 1rem;
+                    color: red;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    h4{
+                        position: absolute;
+                        top: 82px;
+                    }
+                }
+            }
+        }
+        .info{
+            padding: 4rem 0;
+            .infoBox{
+                padding: 1rem 0;
+                line-height: 1.5;
+                h4{
+                    font-size: 1rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                .date{
+                    font-size: .8rem;
+                    font-weight: 500;
+                    color: rgb(0, 255, 255);
+                    letter-spacing: 1px;
+                    display: block;
+                    padding: 5px 0 15px 0;
+                }
+            }
+        }
+    }
+}
+
+
+// TABLETS
+@media only screen and (max-width: 960px){
+    #experience{
+        padding: 5rem 0 1.5rem 0;
+        .largeTitle{
+            font-size: 4rem;
+        }
+        .experienceContainer{
+            .largeIcons{
+                .square{
+                    top: 1rem;
+                }
+                .circle{
+                    top: -4rem;
+                    left: 8rem;
+                }
+                .triangle{
+                    top: -10rem;
+                    left: 4rem;
+                }
+            }
+        }
+    }
+}
+
+// PHONES
+@media only screen and (max-width: 767px){
+    #experience{
+        padding: 2rem 0;
+        .largeTitle{
+            font-size: 3rem;
+            padding: 0 0 1rem 0;
+        }
+        .experienceContainer{
+            display: flex;
+            .largeIcons{
+                display: none;
+            }
+            .info{
+                width: 100%;
+                padding: 0 3rem;
+            }
+        }
+    }
+}

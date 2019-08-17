@@ -1,0 +1,32 @@
+#contactSection{
+    display: flex;
+    justify-content: center;
+    background: rgba(207, 207, 207, 0.144);
+    text-align: center;
+    padding: 2rem 0;
+    .socialContainer{
+        width: 300px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        font-size: 2rem;
+    }
+    h4{
+        padding: 1rem 0 .5rem 0;
+        color: rgb(110, 110, 110);
+    }
+    h2{
+        padding: .5rem;
+        color: rgb(110, 110, 110);
+    }
+}
+
+// TABLETS
+@media only screen and (max-width: 960px){
+    
+}
+
+// PHONES
+@media only screen and (max-width: 960px){
+    
+}

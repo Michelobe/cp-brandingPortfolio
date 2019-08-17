@@ -1,0 +1,226 @@
+#servicesSection{
+    text-align: center;
+    padding: 5rem 0;
+    background: white;
+    .container{
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0 8rem 0;
+            .bgCircle{
+                height: 200px;
+                width: 200px;
+                background: #d5faff;
+                opacity: .6;
+                border-radius: 50%;
+                position: absolute;
+            }
+            h1{
+                position: relative;
+                font-size: 3.25rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                z-index: 1;
+            }
+        }
+        .cardContainer{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            text-align: left;
+            .serviceCard{
+                max-width: 21rem;
+                margin: 1rem;
+                border-radius: 5px;
+                padding: 3rem 2rem;
+                background: transparent;
+                transition: box-shadow .3s linear .1s;
+                &:hover{
+                    background: white;
+                    -webkit-box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    -moz-box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    cursor: pointer;
+                }
+                .fas{
+                    font-size: 2.5rem;
+                    padding-bottom: 1.5rem;
+                }
+                h3{
+                    padding: 1.5rem 0;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                p{
+                    color: rgb(182, 182, 182);
+                    line-height: 1.6;
+                }
+                &.cardOne{
+                    border-bottom: 3px solid #00eeff;
+                }
+                &.cardTwo{
+                    border-bottom: 3px solid red;
+                }
+                &.cardThree{
+                    border-bottom: 3px solid yellow;
+                }
+            }
+        }
+    }
+}
+
+// TABLETS
+@media only screen and (max-width: 960px){
+    #servicesSection{
+        .container{
+            .title{
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                padding: 0 0 5rem 0;
+                .bgCircle{
+                    height: 150px;
+                    width: 150px;
+                    // background: #d5faff;
+                    // opacity: .6;
+                    // border-radius: 50%;
+                    // position: absolute;
+                }
+                h1{
+                    // position: relative;
+                    font-size: 3rem;
+                    // font-weight: 600;
+                    // text-transform: uppercase;
+                    // letter-spacing: 3px;
+                    // z-index: 1;
+                }
+            }
+            .cardContainer{
+                // display: flex;
+                // flex-flow: row wrap;
+                // justify-content: center;
+                // text-align: left;
+                .serviceCard{
+                    max-width: 18rem;
+                    margin: 1rem;
+                    // border-radius: 5px;
+                    padding: 2rem .5rem;
+                    // background: transparent;
+                    // transition: box-shadow .3s linear .1s;
+                    // &:hover{
+                    //     background: white;
+                    //     -webkit-box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    //     -moz-box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    //     box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    //     cursor: pointer;
+                    // }
+                    .fas{
+                        font-size: 1.5rem;
+                        padding-bottom: 1.5rem;
+                    }
+                    h3{
+                        // padding: 1.5rem 0;
+                        font-size: 1rem;
+                        // font-weight: bold;
+                        // text-transform: uppercase;
+                        // letter-spacing: 2px;
+                    }
+                    p{
+                        // color: rgb(182, 182, 182);
+                        // line-height: 1.6;
+                        font-size: .9rem;
+                    }
+                    // &.cardOne{
+                    //     border-bottom: 3px solid #00eeff;
+                    // }
+                    // &.cardTwo{
+                    //     border-bottom: 3px solid red;
+                    // }
+                    // &.cardThree{
+                    //     border-bottom: 3px solid yellow;
+                    // }
+                }
+            }
+        }
+    }
+}
+
+// PHONES
+@media only screen and (max-width: 767px){
+    #servicesSection{
+        .container{
+            .title{
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                padding: 0 0 5rem 0;
+                .bgCircle{
+                    height: 150px;
+                    width: 150px;
+                    // background: #d5faff;
+                    // opacity: .6;
+                    // border-radius: 50%;
+                    // position: absolute;
+                }
+                h1{
+                    // position: relative;
+                    font-size: 3rem;
+                    // font-weight: 600;
+                    // text-transform: uppercase;
+                    // letter-spacing: 3px;
+                    // z-index: 1;
+                }
+            }
+            .cardContainer{
+                // display: flex;
+                // flex-flow: row wrap;
+                // justify-content: center;
+                // text-align: left;
+                .serviceCard{
+                    max-width: 18rem;
+                    margin: 1rem 0;
+                    // border-radius: 5px;
+                    padding: 2rem .5rem;
+                    // background: transparent;
+                    // transition: box-shadow .3s linear .1s;
+                    // &:hover{
+                    //     background: white;
+                    //     -webkit-box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    //     -moz-box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    //     box-shadow: 3px 11px 99px -27px rgba(0,0,0,0.4);
+                    //     cursor: pointer;
+                    // }
+                    .fas{
+                        font-size: 1.5rem;
+                        padding-bottom: 1.5rem;
+                    }
+                    h3{
+                        // padding: 1.5rem 0;
+                        font-size: 1rem;
+                        // font-weight: bold;
+                        // text-transform: uppercase;
+                        // letter-spacing: 2px;
+                    }
+                    p{
+                        // color: rgb(182, 182, 182);
+                        // line-height: 1.6;
+                        font-size: .9rem;
+                    }
+                    // &.cardOne{
+                    //     border-bottom: 3px solid #00eeff;
+                    // }
+                    // &.cardTwo{
+                    //     border-bottom: 3px solid red;
+                    // }
+                    // &.cardThree{
+                    //     border-bottom: 3px solid yellow;
+                    // }
+                }
+            }
+        }
+    }
+}
