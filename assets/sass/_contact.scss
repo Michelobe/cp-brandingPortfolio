@@ -1,15 +1,26 @@
 #contactSection{
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     background: rgba(207, 207, 207, 0.144);
     text-align: center;
     padding: 2rem 0;
-    .socialContainer{
-        width: 300px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        font-size: 2rem;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        .socialContainer{
+            justify-self: center;
+            width: 300px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            font-size: 2rem;
+            .iconContainer{
+                a{
+                    color: rgb(88, 88, 88);
+                }
+            }
+        }
     }
     h4{
         padding: 1rem 0 .5rem 0;

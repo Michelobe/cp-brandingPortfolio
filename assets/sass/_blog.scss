@@ -11,9 +11,9 @@
         padding: 2rem 0;
     }
     .blogContainer{
-        max-width: 800px;
+        // max-width: 800px;
         display: grid;
-        grid-template-columns: repeat(3, 400px);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 500px);
         grid-gap: 15px;
 
@@ -142,10 +142,40 @@
 
 // TABLETS
 @media only screen and (max-width: 960px){
-    
+    .blogSection{
+        padding: 2rem 15px 5rem 15px;
+        .blogHeader{
+            font-size: 3rem;
+        }
+        .blogContainer{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 500px);
+        }
+    }
 }
 
 // PHONES
-@media only screen and (max-width: 960px){
-    
+@media only screen and (max-width: 767px){
+    .blogSection{
+        padding: 2rem 15px 5rem 15px;
+        .blogHeader{
+            font-size: 3rem;
+        }
+        .blogContainer{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 325px);
+            //====== applies to all cards in grid ========
+            .blogCard{
+                &:hover{
+                    overflow: scroll;
+                    .blogDetails{
+                        transform: translate3d(0, -265px, 0);
+                    }
+                }
+                .cardPicture{
+                    height: 80%;
+                }
+            }
+        }
+    }
 }
